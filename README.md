@@ -1,6 +1,6 @@
 # API Response Verification
 
-This Python script verifies the criteria in the API response from a specified URL. It uses the `requests` library to fetch the API response and perform the verification for Category and Promotions element.
+This Python script verifies the criteria in the API response from a specified URL: https://api.tmsandbox.co.nz/v1/Categories/6329/Details.json?catalogue=false. It uses the `requests` library to fetch the API response and perform the verification for Category and Promotions element.
 
 ## Acceptance Criteria
 
@@ -11,12 +11,15 @@ The following acceptance criteria are checked against the API response:
 - The Promotions element with Name "Feature" has a Description that contains the text "Better position in category"
 
 ## Usage
+1. Make sure you have Python installed on your system. You can download the latest version of Python from the official Python website (https://www.python.org) and follow the installation instructions for your operating system.
 
-1. Install the required dependencies:
+2. Set up the project directory: Create a new directory (folder) on your computer where you want to store the code. Let's call it **test_project**. Move the **test_api_categories_promotions.py** file found in https://github.com/jhotomo/pj1 into this directory.
+
+3. Install requests library: The code depends on the requests library, which is not included with Python by default. Open a terminal or command prompt and navigate to the test_project directory. Then run the following command to install the required library:
    ```shell
    pip install requests
    
-2. Run the Python script
+4. Run the code: After the library is installed, you can run the code. Open a terminal or command prompt, navigate to the test_project directory, and run the following command. 
    ```shell
    python3 test_api_categories_promotions.py
    
